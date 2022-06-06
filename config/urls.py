@@ -11,7 +11,11 @@ router.register('article', ArticleViewSet)
 router.register('category', CategoryViewSet)
 router.register('tag', TagViewSet)
 
+def trigger_error(request):
+    division_by_zero = 1/0
+
 urlpatterns = [
+    path('sentry-debug/', trigger_error),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
 ]

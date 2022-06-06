@@ -1,3 +1,6 @@
+certifi==2022.5.18.1
+sentry-sdk==1.5.12
+urllib3==1.26.9
 asgiref==3.5.2
 defusedxml==0.7.1
 diff-match-patch==20200713
